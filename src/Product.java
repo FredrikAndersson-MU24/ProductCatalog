@@ -28,8 +28,7 @@ public class Product {
 
     public String toString(){
         return  "\nName: " + name +
-                "\nPrice: " + price;
+                "\nPrice: " + price +
+                "\n";
     }
-
-
 }

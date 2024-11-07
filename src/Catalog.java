@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Catalog {
-Scanner scanner = new Scanner(System.in);
     ArrayList<Product> products = new ArrayList<>();
 
     public void generateCatalog() {
@@ -22,7 +21,8 @@ Scanner scanner = new Scanner(System.in);
             String name = scanner.nextLine();
             System.out.println("Enter product price: ");
             double price = scanner.nextDouble();
-            Product product = new Product (name,price);
+            products.add(new Product(name, price));
+            showProduct();
         }
 
 
