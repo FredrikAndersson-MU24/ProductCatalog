@@ -2,17 +2,17 @@ import java.util.ArrayList;
 
 public class Catalog {
 
-    ArrayList<Catalog> catalogList = new ArrayList<>();
+    ArrayList<Product> products = new ArrayList<>();
 
     public void generateCatalog() {
 
-  catalogList.add(new Catalog("apple", 2.5));
-  catalogList.add(new Catalog("banana", 3.0));
+  products.add(new Product("apple", 2.5));
+  products.add(new Product("banana", 3.0));
 
-    for(Catalog catalog : catalogList){
-        System.out.println(catalog);
+    for(Product product : products){
+        System.out.println(product);
     }
-            
+
 
     }
 
