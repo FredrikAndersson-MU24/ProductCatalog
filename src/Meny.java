@@ -8,7 +8,7 @@ public class Meny {
 
         while(true) {
             System.out.println("1. Add product");
-            System.out.println("2. Add catalog");
+            System.out.println("2. Show catalog");
             System.out.println("3. Exit");
             System.out.println("Enter your choice:");
             int choice = scanner.nextInt();
@@ -16,12 +16,7 @@ public class Meny {
 
             switch (choice){
                 case 1:
-                    System.out.println("Enter product name: ");
-                    String name = scanner.nextLine();
-                    System.out.println("Enter product price: ");
-                    double price = scanner.nextDouble();
-                    Product product = new Product (name,price);
-                    catalog.addProduct(product);
+                    catalog.addProduct(scanner);
                     break;
                 case 2:
                     catalog.showProduct();
@@ -29,8 +24,8 @@ public class Meny {
                 case 3:
                     System.out.println("Exit program");
                     return;
+                default:
                 System.out.println("Try again");
-
 
             }
         }
